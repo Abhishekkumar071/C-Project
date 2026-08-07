@@ -8,6 +8,8 @@ LinkedList *ll_create(void){
     return ll;
 }
 
+
+
 void ll_insert_front(LinkedList *ll, int data){
     Node *node = safe_malloc(sizeof(Node));
     node->data = data;

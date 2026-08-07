@@ -244,7 +244,7 @@ Please follow the existing code style and include tests for any new module.
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT  License** — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
@@ -253,5 +253,4 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 Made with ❤️ and `malloc()` in **C**
 
 ⭐ Star this repo if you found it useful!
-
 </div>
