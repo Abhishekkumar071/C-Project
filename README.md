@@ -129,8 +129,8 @@ make --version    # GNU Make
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dsa-in-c.git
-cd dsa-in-c
+git clone https://github.com/Abhishekkumar071/C-Project.git
+cd C-Project
 ```
 
 ### Build All Modules
