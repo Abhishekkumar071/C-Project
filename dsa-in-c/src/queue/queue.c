@@ -8,7 +8,10 @@ Queue *queue_create(void) {
 }
 
 int enqueue(Queue *q, int val) {
-    if (q->size == QUEUE_MAX) { fprintf(stderr, RED "Queue full\n" RESET); return 0; }
+    if (q->size == QUEUE_MAX) { 
+        fprintf(stderr, RED "Queue full\n" RESET); 
+        return 0; 
+    }
     q->data[q->rear] = val;
     q->rear = (q->rear + 1) % QUEUE_MAX;
     q->size++;
@@ -16,14 +19,19 @@ int enqueue(Queue *q, int val) {
 }
 
 int dequeue(Queue *q, int *out) {
-    if (q->size == 0) { fprintf(stderr, RED "Queue empty\n" RESET); return 0; }
+    if (q->size == 0) { 
+        fprintf(stderr, RED "Queue empty\n" RESET); 
+        return 0; 
+    }
     *out = q->data[q->front];
     q->front = (q->front + 1) % QUEUE_MAX;
     q->size--;
     return 1;
 }
 
-int queue_is_empty(Queue *q) { return q->size == 0; }
+int queue_is_empty(Queue *q) { 
+    return q->size == 0; 
+}
 
 void queue_print(Queue *q) {
     printf("Queue [front->rear]: ");
@@ -32,4 +40,6 @@ void queue_print(Queue *q) {
     printf("\n");
 }
 
-void queue_destroy(Queue *q) { free(q); }
+void queue_destroy(Queue *q) { 
+    free(q); 
+}
